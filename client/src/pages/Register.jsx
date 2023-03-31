@@ -42,7 +42,7 @@ const Register = () => {
         if(res) {
             alert("Successfully signed up")
             setInpval({...inpval, name:"", email: "", password: "", gender: ""})
-            navigate("/login")
+            navigate("/")
         }
     }
   return (
@@ -80,7 +80,7 @@ const Register = () => {
                 </div>
 
                 <button className='btn' onClick={addUserdata}>Sign Up</button>
-                <p>Already have an account? <Link to="/login">Log In</Link></p>
+                <p>Already have an account? <Link to="/">Log In</Link></p>
             </form>
         </div>
     </section>

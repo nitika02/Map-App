@@ -33,12 +33,12 @@ const MapView = ({id}) => {
       setToken(storedToken);
       console.log(card)
     } else {
-      navigate("/login")
+      navigate("/")
     }
   }, [])
 
   const goBack = () => {
-    navigate("/")
+    navigate("/dashboard")
   }
   
 

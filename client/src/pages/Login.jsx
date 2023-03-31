@@ -43,7 +43,7 @@ const Login = () => {
             alert("Successfully signed up")
             localStorage.setItem("token", token)
             setInpval({...inpval, email: "", password: "",})
-            navigate("/")
+            navigate("/dashboard")
         } else {
             alert("Please check your username and password")
         }

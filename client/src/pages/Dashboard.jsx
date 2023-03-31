@@ -25,7 +25,7 @@ const Dashboard = () => {
     if (storedToken) {
       setToken(storedToken);
     } else {
-      navigate("/login")
+      navigate("/")
     }
   }, [])
   useEffect(() => {
@@ -43,7 +43,7 @@ const Dashboard = () => {
   const handleLogout = () => {
     setToken("")
     localStorage.removeItem("token")
-    navigate("/login")
+    navigate("/")
   }
 
 
